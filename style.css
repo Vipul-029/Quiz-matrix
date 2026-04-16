@@ -1,0 +1,117 @@
+:root{
+--bg:#eef2f7;
+--text:#1f2937;
+--primary:#2563eb;
+--card:#ffffff;
+}
+
+body.dark{
+--bg:#0b1220;
+--text:#f1f5f9;
+--primary:#3b82f6;
+--card:#1e293b;
+}
+
+body{
+margin:0;
+font-family:Segoe UI;
+background:var(--bg);
+color:var(--text);
+display:flex;
+flex-direction:column;
+min-height:100vh;
+}
+
+/* HEADER */
+header{
+background:var(--primary);
+color:white;
+padding:15px;
+font-size:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+/* FIXED THEME BUTTON */
+header button{
+width:auto;
+padding:8px 12px;
+margin:0;
+border-radius:6px;
+font-size:16px;
+}
+
+/* MAIN */
+#app{
+flex:1;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+/* CARD */
+.card{
+background:var(--card);
+padding:25px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+width:340px;
+text-align:center;
+}
+
+/* FOOTER */
+footer{
+padding:8px;
+background:#e5e7eb;
+color:#555;
+font-size:13px;
+text-align:center;
+}
+
+/* BUTTON */
+button{
+padding:12px;
+margin:6px 0;
+border:none;
+border-radius:8px;
+background:var(--primary);
+color:white;
+cursor:pointer;
+width:100%;
+transition:0.2s;
+}
+
+button:hover{
+transform:scale(1.03);
+}
+
+/* INPUT */
+input,select{
+padding:10px;
+width:100%;
+margin:10px 0;
+border-radius:6px;
+border:1px solid #ccc;
+box-sizing:border-box;
+font-size:14px;
+}
+
+/* OPTIONS */
+.option{
+background:var(--card);
+color:var(--text);
+border:1px solid #ccc;
+}
+
+/* TIMER */
+.timer{
+font-weight:bold;
+margin:10px;
+}
+
+.topic-buttons{
+display:flex;
+flex-direction:column;
+}
